@@ -8,9 +8,9 @@ COPY package*.json ./
 
 RUN npm install
 
-RUN npm test
-
 COPY . .
+
+RUN npm test
 
 EXPOSE 3000
 
